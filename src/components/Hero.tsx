@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Hi, I'm <span className="gradient-text">Keerthi</span>
+              Hi, I'm <span className="text-primary">Keerthi</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground">
@@ -32,29 +32,29 @@ const Hero = () => {
             
             <div className="flex flex-wrap gap-4 pt-4">
               <Button 
-                onClick={() => scrollToSection('projects')}
                 size="lg"
                 className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open('https://drive.google.com/drive/folders/1ejjb2mwbv_lE4s2aMXY4nM-0qE7salPx?usp=drive_link', '_blank')}
               >
-                View Projects
+                View CV
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.open('https://drive.google.com/drive/folders/1ejjb2mwbv_lE4s2aMXY4nM-0qE7salPx?usp=drive_link', '_blank')}
+                onClick={() => scrollToSection('contact')}
               >
-                View CV
+                Get in touch
               </Button>
             </div>
           </div>
           
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-3xl opacity-30 animate-pulse" />
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
               <img 
                 src="https://i.postimg.cc/MTt3dRty/professional-picture-square.jpg" 
                 alt="Keerthi Chandra"
-                className="relative rounded-full w-72 h-72 md:w-96 md:h-96 object-cover border-8 border-white shadow-2xl"
+                className="relative rounded-full w-72 h-72 md:w-96 md:h-96 object-cover border-8 border-white shadow-[0_10px_40px_rgba(139,92,246,0.3)]"
               />
             </div>
           </div>

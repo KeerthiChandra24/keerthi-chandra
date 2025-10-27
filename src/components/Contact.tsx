@@ -22,13 +22,50 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-muted/30">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          Let's <span className="gradient-text">Connect</span>
+          Let's <span className="text-primary">Connect</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to discuss product strategy? Feel free to reach out.
         </p>
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <Input
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+                className="h-12"
+              />
+            </div>
+            
+            <div>
+              <Input
+                type="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+                className="h-12"
+              />
+            </div>
+            
+            <div>
+              <Textarea
+                placeholder="Your Message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                required
+                className="min-h-[120px] resize-none"
+              />
+            </div>
+            
+            <Button type="submit" className="w-full h-12 bg-primary hover:bg-primary/90">
+              Send Message
+            </Button>
+          </form>
+          
           <div className="space-y-6">
             <div className="space-y-4">
               <a 
@@ -93,43 +130,6 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <Input
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required
-                className="h-12"
-              />
-            </div>
-            
-            <div>
-              <Input
-                type="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-                className="h-12"
-              />
-            </div>
-            
-            <div>
-              <Textarea
-                placeholder="Your Message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                required
-                className="min-h-[120px] resize-none"
-              />
-            </div>
-            
-            <Button type="submit" className="w-full h-12 bg-primary hover:bg-primary/90">
-              Send Message
-            </Button>
-          </form>
         </div>
       </div>
     </section>

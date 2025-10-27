@@ -34,9 +34,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            className="text-2xl font-bold text-primary hover:opacity-80 transition-opacity"
           >
-            KC
+            Keerthi
           </button>
           
           <div className="hidden md:flex items-center gap-8">

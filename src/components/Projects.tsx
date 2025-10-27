@@ -72,7 +72,7 @@ const Projects = () => {
     <section id="projects" className="section-padding">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          <span className="gradient-text">Projects</span>
+          <span className="text-primary">Projects</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           A collection of product work spanning strategy, research, and execution.

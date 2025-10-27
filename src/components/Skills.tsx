@@ -28,7 +28,7 @@ const Skills = () => {
     <section id="skills" className="section-padding bg-muted/30">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          <span className="gradient-text">Skills</span>
+          <span className="text-primary">Skills</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

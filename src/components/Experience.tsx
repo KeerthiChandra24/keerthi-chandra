@@ -32,7 +32,7 @@ const Experience = () => {
         <div className="flex items-center justify-center gap-3 mb-12">
           <Briefcase className="w-8 h-8 text-primary" />
           <h2 className="text-4xl md:text-5xl font-bold text-center">
-            <span className="gradient-text">Experience</span>
+            <span className="text-primary">Experience</span>
           </h2>
         </div>
         
