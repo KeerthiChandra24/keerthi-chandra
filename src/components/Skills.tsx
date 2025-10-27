@@ -8,7 +8,7 @@ const skillCategories = [
   },
   {
     title: "Analytics & Tools",
-    skills: ["SQL", "Python", "Power BI", "Tableau", "Excel", "Pandas"],
+    skills: ["SQL", "Python", "Power BI", "Tableau", "Excel"],
     color: "bg-secondary/10 text-secondary-foreground border-secondary/20"
   },
   {
