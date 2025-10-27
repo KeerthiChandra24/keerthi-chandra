@@ -29,12 +29,9 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding">
       <div className="container-custom">
-        <div className="flex items-center justify-center gap-3 mb-12">
-          <Briefcase className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl md:text-5xl font-bold text-center">
-            <span className="text-primary">Experience</span>
-          </h2>
-        </div>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <span className="text-primary relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-primary">Experience</span>
+        </h2>
         
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (

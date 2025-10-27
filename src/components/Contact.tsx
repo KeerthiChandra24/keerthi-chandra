@@ -21,114 +21,123 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-muted/30">
       <div className="container-custom">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          Let's <span className="text-primary">Connect</span>
+        <h2 className="text-4xl md:text-5xl font-bold mb-2 text-center">
+          Get in <span className="text-primary relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-primary">Touch</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to discuss product strategy? Feel free to reach out.
+          Let's connect! Whether you have a project in mind or just want to chat about product strategy, I'd love to hear from you.
         </p>
         
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
+              <label className="text-sm font-medium mb-1 block">Name</label>
               <Input
-                placeholder="Your Name"
+                placeholder="Your name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className="h-12"
+                className="h-11"
               />
             </div>
             
             <div>
+              <label className="text-sm font-medium mb-1 block">Email</label>
               <Input
                 type="email"
-                placeholder="Your Email"
+                placeholder="your.email@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                className="h-12"
+                className="h-11"
               />
             </div>
             
             <div>
+              <label className="text-sm font-medium mb-1 block">Message</label>
               <Textarea
-                placeholder="Your Message"
+                placeholder="Tell me about your project or idea..."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
-                className="min-h-[120px] resize-none"
+                className="min-h-[140px] resize-none"
               />
             </div>
             
-            <Button type="submit" className="w-full h-12 bg-primary hover:bg-primary/90">
+            <Button type="submit" className="w-full h-12 bg-[#F59E0B] hover:bg-[#F59E0B]/90 text-white font-semibold">
               Send Message
             </Button>
           </form>
           
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <a 
-                href="mailto:keerthisrinayak@gmail.com"
-                className="flex items-center gap-4 p-4 bg-card rounded-xl shadow-sm border border-border hover:shadow-md transition-shadow group"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">keerthisrinayak@gmail.com</p>
-                </div>
-              </a>
-              
-              <a 
-                href="mailto:keerthi22@iitk.ac.in"
-                className="flex items-center gap-4 p-4 bg-card rounded-xl shadow-sm border border-border hover:shadow-md transition-shadow group"
-              >
-                <div className="w-12 h-12 bg-secondary/30 rounded-full flex items-center justify-center group-hover:bg-secondary/40 transition-colors">
-                  <Mail className="w-5 h-5 text-secondary-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Academic Email</p>
-                  <p className="font-medium">keerthi22@iitk.ac.in</p>
-                </div>
-              </a>
-              
-              <a 
-                href="tel:+919785661921"
-                className="flex items-center gap-4 p-4 bg-card rounded-xl shadow-sm border border-border hover:shadow-md transition-shadow group"
-              >
-                <div className="w-12 h-12 bg-accent/30 rounded-full flex items-center justify-center group-hover:bg-accent/40 transition-colors">
-                  <Phone className="w-5 h-5 text-accent-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-medium">+91 9785661921</p>
-                </div>
-              </a>
-            </div>
+          <div className="space-y-3">
+            <a 
+              href="tel:+919785661921"
+              className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:shadow-sm transition-shadow"
+            >
+              <div className="w-10 h-10 bg-[#F59E0B]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Phone className="w-5 h-5 text-[#F59E0B]" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">Phone</p>
+                <p className="text-sm font-medium">+91-9785661921</p>
+              </div>
+            </a>
             
-            <div className="flex gap-4 pt-4">
-              <a 
-                href="https://linkedin.com/in/keerthi-chandra"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 p-3 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="font-medium">LinkedIn</span>
-              </a>
-              
-              <a 
-                href="https://github.com/keerthisrinayak"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 p-3 bg-foreground text-background rounded-xl hover:bg-foreground/90 transition-colors"
-              >
-                <Github className="w-5 h-5" />
-                <span className="font-medium">GitHub</span>
-              </a>
-            </div>
+            <a 
+              href="mailto:keerthisrinayak@gmail.com"
+              className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:shadow-sm transition-shadow"
+            >
+              <div className="w-10 h-10 bg-[#F59E0B]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-[#F59E0B]" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">Email</p>
+                <p className="text-sm font-medium">keerthisrinayak@gmail.com</p>
+              </div>
+            </a>
+            
+            <a 
+              href="mailto:keerthi22@iitk.ac.in"
+              className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:shadow-sm transition-shadow"
+            >
+              <div className="w-10 h-10 bg-[#F59E0B]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-[#F59E0B]" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">Email (Academic)</p>
+                <p className="text-sm font-medium">keerthi22@iitk.ac.in</p>
+              </div>
+            </a>
+            
+            <a 
+              href="https://linkedin.com/in/keerthi-chandra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:shadow-sm transition-shadow"
+            >
+              <div className="w-10 h-10 bg-[#F59E0B]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Linkedin className="w-5 h-5 text-[#F59E0B]" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">LinkedIn</p>
+                <p className="text-sm font-medium">keerthi-chandra</p>
+              </div>
+            </a>
+            
+            <a 
+              href="https://github.com/keerthisrinayak"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border hover:shadow-sm transition-shadow"
+            >
+              <div className="w-10 h-10 bg-[#F59E0B]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Github className="w-5 h-5 text-[#F59E0B]" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground">GitHub</p>
+                <p className="text-sm font-medium">keerthisrinayak</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -50,11 +50,11 @@ const Hero = () => {
           
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
+              <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl" />
               <img 
                 src="https://i.postimg.cc/MTt3dRty/professional-picture-square.jpg" 
                 alt="Keerthi Chandra"
-                className="relative rounded-full w-72 h-72 md:w-96 md:h-96 object-cover border-8 border-white shadow-[0_10px_40px_rgba(139,92,246,0.3)]"
+                className="relative rounded-full w-72 h-72 md:w-96 md:h-96 object-cover border-4 border-white shadow-lg"
               />
             </div>
           </div>

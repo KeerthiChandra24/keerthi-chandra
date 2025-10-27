@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="section-padding bg-muted/30">
       <div className="container-custom">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          About <span className="text-primary">Me</span>
+          About <span className="text-primary relative inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-primary">Me</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -31,21 +31,21 @@ const About = () => {
             
             <div className="space-y-4">
               <div className="bg-card p-6 rounded-2xl shadow-md border border-border">
-                <h4 className="font-semibold text-lg mb-1">B.S. in Earth Sciences</h4>
-                <p className="text-primary font-medium">IIT Kanpur</p>
+                <h4 className="font-semibold text-lg mb-1 text-primary">B.S. in Earth Sciences</h4>
+                <p className="text-foreground font-medium">IIT Kanpur</p>
                 <p className="text-sm text-muted-foreground mt-1">2022 – 2026 (Expected)</p>
               </div>
               
               <div className="bg-card p-6 rounded-2xl shadow-md border border-border">
-                <h4 className="font-semibold text-lg mb-1">Class XII</h4>
+                <h4 className="font-semibold text-lg mb-1 text-primary">Class XII</h4>
                 <p className="text-foreground">Vijaya Ratna Junior College, Hyderabad</p>
-                <p className="text-sm text-accent-foreground font-medium mt-1">96.8% • 2021</p>
+                <p className="text-sm text-muted-foreground font-medium mt-1">96.8% • 2021</p>
               </div>
               
               <div className="bg-card p-6 rounded-2xl shadow-md border border-border">
-                <h4 className="font-semibold text-lg mb-1">Class X</h4>
+                <h4 className="font-semibold text-lg mb-1 text-primary">Class X</h4>
                 <p className="text-foreground">Bharatiya Vidya Bhavan's Public School, Hyderabad</p>
-                <p className="text-sm text-accent-foreground font-medium mt-1">95.8% • 2019</p>
+                <p className="text-sm text-muted-foreground font-medium mt-1">95.8% • 2019</p>
               </div>
             </div>
           </div>
